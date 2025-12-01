@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=78.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sylla_films"
+version = "0.0.3"
+description = "SDK Python pour accéder à l’API MovieLens (compatible Data Analysts/Data Scientists)"
+readme = "README.md"
+requires-python = ">=3.12"
+
+authors = [
+    { name = "Oumarou Sylla" }
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "httpx==0.28.1",
+    "pydantic==2.12.5",
+    "pydantic_core==2.41.5",
+    "uvicorn==0.38.0",
+    "fastapi==0.122.0",
+    "starlette==0.50.0",
+    "SQLAlchemy==2.0.44",
+    "typing_extensions==4.15.0",
+    "numpy==2.2.4",
+    "pandas==2.2.3",
+    "python-dotenv",
+    "backoff>=2.2.1"
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/sylla-films/"
